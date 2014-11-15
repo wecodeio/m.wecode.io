@@ -1,0 +1,29 @@
+{
+  "name": "m.wecode.io",
+  "version": "0.0.1",
+  "authors": [
+    "Lucas Videla <videla.lucas@gmail.com>"
+  ],
+  "description": "Sitio Mobile de weCode",
+  "keywords": [
+    "mobile",
+    "wecode",
+    "jquerymobile"
+  ],
+  "license": "MIT",
+  "homepage": "http://m.wecode.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-mobile-bower": "~1.4.2"
+  },
+  "install": {
+    "path": "vendor"
+  }
+}
