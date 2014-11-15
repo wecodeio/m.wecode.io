@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>wecode.io</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="vendor/jquery/jquery.js"></script>
@@ -10,6 +10,27 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/wecodeio.css"/>
   </head>
   <body>
-    <h1>Hola, Mundo!</h1>
+    <div data-role="page" data-theme="b" id="home">
+      <div data-role="header">
+        <!-- <img class="logo" src="imagenes/logo.gif" alt="wecode logo" width="30" height="30"/> -->
+        <h1>
+          <span class="highlight">we</span>code
+        </h1>
+      </div>
+      <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+          <li data-role="list-divider">Main menu</li>
+          <li><a class="ui-btn ui-icon-user ui-btn-icon-left" href="#team">Team</a></li>
+          <li><a class="ui-btn ui-icon-heart ui-btn-icon-left" href="#motto">Motto</a></li>
+          <li><a class="ui-btn ui-icon-calendar ui-btn-icon-left" href="#events">Events</a></li>
+          <li><a class="ui-btn ui-icon-location ui-btn-icon-left" href="#community">Community</a></li>
+          <li><a class="ui-btn ui-icon-comment ui-btn-icon-left" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <footer data-role="footer" data-position="fixed">
+        <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
+        <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
+      </footer>
+    </div>
   </body>
 </html>
