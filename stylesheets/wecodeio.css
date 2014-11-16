@@ -17,3 +17,7 @@ footer .site {
   float: right;
   margin-right: 1em;
 }
+
+span.small {
+  font-size: smaller;
+}
