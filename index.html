@@ -145,7 +145,7 @@
 
     <div data-role="page" data-theme="b" id="join">
       <div data-role="header">
-        <h1><span class="highlight">we</span> share</h1>
+        <h1><span class="highlight">we</span> grow</h1>
         <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
           Home
         </a>
@@ -172,6 +172,44 @@
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
       </footer>
+    </div>
+
+    <div data-role="page" data-theme="b" id="contact">
+      <div data-role="header">
+        <h1><span class="highlight">we</span> listen</h1>
+        <a href="#storage" data-role="button" data-icon="cloud">
+          Storage
+        </a>
+        <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
+          Home
+        </a>
+      </div>
+      <div data-role="content">
+        <h2>Contact Us</h2>
+
+        <form action="encuesta.htm" method ="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" value="" inputmode="latin"/>
+          <label for="email">Mail:</label>
+          <input type="email" id="email" value="" inputmode="latin lowerCase"/>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" inputmode="user predictOn"></textarea>
+          <input class="do-submit" type="button" value="Send" data-icon="action" data-iconpos="right" />
+        </form>
+
+      </div>
+      <footer data-role="footer" data-position="fixed">
+        <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
+        <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
+      </footer>
+
+      <div data-role="panel" id="storage">
+          <h2>Previous messages</h2>
+          <div class="previous">
+            pipo
+          </div>
+      </div>
+
     </div>
 
   </body>
