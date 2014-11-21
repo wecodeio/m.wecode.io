@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# 2014-11-19:v2
+
+CACHE:
+/favicon.ico
+index.html
+scripts/wecodeio.js
+stylesheets/wecodeio.css
+vendor/jquery/jquery.js
+vendor/jquery.mobile-bower/jquery.mobile-1.4.2.js
+vendor/jquery.mobile-bower/jquery.mobile-1.4.2.css
+images/logo.jpg
+
+NETWORK:
+*
+
+FALLBACK:
+/images/logo.jpg /images/logo-offline.jpg
