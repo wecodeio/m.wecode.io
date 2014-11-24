@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html manifest="wecodeio.appcache">
   <head>
-    <title>wecode.io</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="vendor/jquery-mobile-bower/jquery.mobile-1.4.2.js"></script>
-    <link rel="stylesheet" href="vendor/jquery-mobile-bower/jquery.mobile-1.4.2.css"/>
+
+    <script src="vendor/jquery/jquery.js" type="text/javascript"></script>
+    <script src="scripts/wecodeio.js" type="text/javascript"></script>
+    <script src="vendor/jquery-mobile-bower/jquery.mobile-1.4.2.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="vendor/jquery-mobile-bower/jquery.mobile-1.4.2.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/wecodeio.min.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/wecodeio.css"/>
+    <title>wecode.io</title>
   </head>
   <body>
 
-    <div data-role="page" data-theme="b" id="home">
+    <div data-role="page" data-theme="a" id="home">
       <div data-role="header">
-        <!-- <img class="logo" src="imagenes/logo.gif" alt="wecode logo" width="30" height="30"/> -->
         <h1>
           <span class="highlight">we</span> code
         </h1>
@@ -28,19 +32,18 @@
           <li><a class="ui-btn ui-icon-comment ui-btn-icon-left" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <footer data-role="footer" data-position="fixed">
+      <div class="footer" data-role="footer" data-position="fixed">
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
-      </footer>
+      </div>
     </div>
 
-    <div data-role="page" data-theme="b" id="team">
+    <div data-role="page" data-theme="a" id="team">
       <div data-role="header">
-        <!-- <img class="logo" src="imagenes/logo.gif" alt="wecode logo" width="30" height="30"/> -->
         <h1>
-          <span class="highlight">we</span> are
+          <span class="highlight">we</span> code
         </h1>
-        <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
+        <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">
           Home
         </a>
       </div>
@@ -57,7 +60,7 @@
             <h2>Cristian Rasch</h2>
             <span class="small">foss evangelist</span>
           </li>
-          <li>
+          <li class="do-redirect" data-target="#delucas">
             <img src="images/team/luke_ar.jpg" alt="Lucas" height="80" width="80"/>
             <h2>Lucas Videla</h2>
             <span class="small">code nerd</span>
@@ -79,16 +82,46 @@
           </li>
         </ul>
       </div>
-      <footer data-role="footer" data-position="fixed">
+      <div class="footer" data-role="footer" data-position="fixed">
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
-      </footer>
+      </div>
     </div>
 
-    <div data-role="page" data-theme="b" id="motto">
+    <div data-role="page" data-theme="a" id="delucas">
+      <div data-role="header">
+        <h1>
+          <span class="highlight">we</span> code
+        </h1>
+        <div class="navbar" data-role="controlgroup" data-mini="true" data-type="horizontal">
+          <a href="#home" data-role="button" data-icon="home">
+            Home
+          </a>
+          <a href="#team" data-role="button" data-icon="user">
+            The Team
+          </a>
+        </div>
+      </div>
+      <div data-role="content">
+        <h2>
+          Lucas Videla <span class="small">code nerd</span>
+        </h2>
+        <p><span class="highlight">Lucas</span> is a tireless
+          apprentice and practitioner of
+          the art of software construction. He lectures at
+          two universities and loves talking and guiding
+          workshops to share and improve his knowledge.</p>
+      </div>
+      <div class="footer" data-role="footer" data-position="fixed">
+        <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
+        <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
+      </div>
+    </div>
+
+    <div data-role="page" data-theme="a" id="motto">
       <div data-role="header">
         <h1><span class="highlight">we</span> think</h1>
-        <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
+        <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">
           Home
         </a>
       </div>
@@ -98,16 +131,16 @@
         <p><span class="highlight">We</span>'d love to hear about your next project.</p>
         <a href="#contact" class="ui-btn ui-icon-comment ui-btn-corner-all">Contact us!</a>
       </div>
-      <footer data-role="footer" data-position="fixed">
+      <div class="footer" data-role="footer" data-position="fixed">
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
-      </footer>
+      </div>
     </div>
 
-    <div data-role="page" data-theme="b" id="events">
+    <div data-role="page" data-theme="a" id="events">
       <div data-role="header">
-        <h1><span class="highlight">we</span> attend</h1>
-        <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
+        <h1><span class="highlight">we</span> code</h1>
+        <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">
           Home
         </a>
       </div>
@@ -137,73 +170,81 @@
           </ul>
         </div>
       </div>
-      <footer data-role="footer" data-position="fixed">
+      <div class="footer" data-role="footer" data-position="fixed">
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
-      </footer>
+      </div>
     </div>
 
-    <div data-role="page" data-theme="b" id="join">
+    <div data-role="page" data-theme="a" id="join">
       <div data-role="header">
-        <h1><span class="highlight">we</span> grow</h1>
-        <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
+        <h1><span class="highlight">we</span> code</h1>
+        <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">
           Home
         </a>
       </div>
       <div data-role="content">
         <h2>Join Us</h2>
         <p>
-          <span class="highlight">We</span> built a strong community of fellow software professionals, based in trust and FOSS. Whenever we find someone who may fit in out organization, <span class="highlight">we</span> share a FOSS project to test drive the chemistry between us. If it's strong enough, you're in.
+          <span class="highlight">We</span> build a community of software professionals, based on trust and free and open source software. Whenever <span class="highlight">we</span> find someone who may join us, <span class="highlight">we</span> share an open project with her to test drive how <span class="highlight">we</span> work together. If the experience is good enough, she can consider herself part of <span class="highlight">we</span>code.
         </p>
-        <ul>
+        <ul class="values">
           <li>
-            <span class="highlight">we</span> code; we build solid, yet flexible solutions to maximize product value.
+            <span class="highlight">we</span> code; we build solid yet flexible solutions to maximize the delivered value.
           </li>
           <li>
-            <span class="highlight">we</span> learn; our hands-on approach to taking on everyday challenges differentiates us in our industry.
+            <span class="highlight">we</span> learn; our hands-on approach differentiates us in this industry.
           </li>
           <li>
-            <span class="highlight">we</span> share; through our presentations and workshops, we fork and merge to and from the community.
+            <span class="highlight">we</span> share; through events we explore and then bring back knowledge towards the community.
           </li>
         </ul>
         <a href="#contact" class="ui-btn ui-btn-corner-all">Drop us a line</a>
       </div>
-      <footer data-role="footer" data-position="fixed">
+      <div class="footer" data-role="footer" data-position="fixed">
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
-      </footer>
+      </div>
     </div>
 
-    <div data-role="page" data-theme="b" id="contact">
+    <div data-role="page" data-theme="a" id="contact">
       <div data-role="header">
-        <h1><span class="highlight">we</span> listen</h1>
-        <a href="#storage" data-role="button" data-icon="cloud">
-          Storage
-        </a>
-        <a href="#home" data-role="button" data-icon="home" class="ui-btn-right">
+        <h1><span class="highlight">we</span> code</h1>
+        <a href="#home" data-role="button" data-icon="home" class="ui-btn-left">
           Home
+        </a>
+        <a href="#storage" data-role="button" data-icon="cloud" class="ui-btn-right">
+          Storage
         </a>
       </div>
       <div data-role="content">
         <h2>Contact Us</h2>
 
         <form action="encuesta.htm" method ="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" value="" inputmode="latin"/>
-          <label for="email">Mail:</label>
-          <input type="email" id="email" value="" inputmode="latin lowerCase"/>
-          <label for="comment">Comment:</label>
-          <textarea id="comment" inputmode="user predictOn"></textarea>
-          <input class="do-submit" type="button" value="Send" data-icon="action" data-iconpos="right" />
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value=""/>
+          </div>
+          <div class="field">
+            <label for="email">Mail:</label>
+            <input type="email" id="email" value=""/>
+          </div>
+          <div class="field">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="3" cols="50"></textarea>
+          </div>
+          <div class="field">
+            <input class="do-submit" type="button" value="Send" data-icon="action" data-iconpos="right" />
+          </div>
         </form>
 
       </div>
-      <footer data-role="footer" data-position="fixed">
+      <div class="footer" data-role="footer" data-position="fixed">
         <a class="phone ui-btn ui-icon-phone ui-btn-icon-left ui-btn-corner-all" href="tel:541153680424">+54 11 5368 0424</a>
         <a class="site ui-btn ui-icon-action ui-btn-icon-left ui-btn-corner-all" href="http://www.wecode.io">Full Site</a>
-      </footer>
+      </div>
 
-      <div data-role="panel" id="storage">
+      <div data-role="panel" id="storage" data-position="right">
           <h2>Previous message</h2>
           <div class="previous">
             <p>No previous messages to load</p>
@@ -211,64 +252,6 @@
           <input class="do-load" type="button" value="Load form"/>
           <input class="do-flush" type="button" value="Remove saved values"/>
       </div>
-
     </div>
-
-    <script type="text/javascript">
-
-      function drawPreviousMessage(){
-        $(".previous").children().detach();
-        $(".previous").append($("<h4>").text(localStorage.getItem("name")));
-        $(".previous").append($("<p>").append("<small>").addClass("small").text(localStorage.getItem("email")));
-        $(".previous").append($("<p>").text(localStorage.getItem("comment")));
-
-        // $(".do-load").parent().show();
-        // $(".do-flush").parent().show();
-      }
-
-      $(function(){
-
-        if (localStorage.getItem("name")) {
-          drawPreviousMessage();
-        }
-
-        $(".do-submit").on("click", function(){
-
-          if(typeof(Storage)!=="undefined") {
-            localStorage.setItem("name", $("#name").val());
-            localStorage.setItem("email", $("#email").val());
-            localStorage.setItem("comment", $("#comment").val());
-
-            drawPreviousMessage();
-
-            $("#name").val("");
-            $("#email").val("");
-            $("#comment").val("");
-
-          } else {
-            console.log("Current browser doesn't support Local Storage");
-          }
-        });
-
-        $(".do-load").on("click", function(){
-          $("#name").val(localStorage.getItem("name"));
-          $("#email").val(localStorage.getItem("email"));
-          $("#comment").val(localStorage.getItem("comment"));
-        });
-
-        $(".do-flush").on("click", function(){
-          localStorage.removeItem("name");
-          localStorage.removeItem("email");
-          localStorage.removeItem("comment");
-
-          $(".previous").children().detach();
-          $(".previous").append($("<p>").text("No previous messages to load"));
-
-          // $(".do-load").parent().hide();
-          // $(".do-flush").parent().hide();
-        })
-      })
-    </script>
-
   </body>
 </html>
