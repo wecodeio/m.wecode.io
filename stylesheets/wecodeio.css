@@ -1,23 +1,33 @@
-.highlight {
+@charset "utf-8";
+
+h1 .highlight {
   color: #1399d9;
 }
 
+.highlight {
+  font-weight: bold;
+}
+
 .logo {
-  float: left;
   margin-top: 0.4em;
   margin-left: 1em;
 }
 
-footer .phone {
-  float: left;
-  margin-left: 1em;
+.navbar {
+  padding: 0.5em 1em;
+  margin: 0;
 }
 
-footer .site {
-  float: right;
-  margin-right: 1em;
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+div.footer {
+  text-align: center;
 }
 
 span.small {
   font-size: smaller;
+  font-weight: normal;
 }
